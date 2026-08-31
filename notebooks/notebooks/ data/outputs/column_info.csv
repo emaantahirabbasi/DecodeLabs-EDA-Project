@@ -1,0 +1,5 @@
+Column,Data_Type,Non_Null,Unique
+Quantity,float64,1007,5
+UnitPrice,float64,1006,999
+ItemsInCart,float64,1025,10
+TotalPrice,float64,1200,1188
