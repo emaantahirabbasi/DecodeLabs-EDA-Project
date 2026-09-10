@@ -73,3 +73,37 @@ This project demonstrates **enterprise-grade data preprocessing** for the UCI Cr
 ### Install Dependencies
 ```bash
 pip install -r requirements.txt
+
+
+
+
+---
+
+## Project 2: Fraud Detection Pipeline
+
+### 📋 Overview
+Supervised learning project to detect fraudulent transactions in a highly imbalanced dataset (0.17% fraud rate).
+
+### 🎯 Key Achievements
+- Applied **SMOTE** to handle class imbalance (99.83% vs 0.17%)
+- Used **imblearn.pipeline.Pipeline** to prevent data leakage
+- Trained **Logistic Regression** and **Random Forest** classifiers
+- Evaluated using **Precision, Recall, F1, ROC-AUC** (not accuracy!)
+- Hyperparameter tuning with **GridSearchCV**
+
+### 📁 Files
+- `notebooks/02_Project2_FraudDetection.ipynb`
+- `outputs/fraud_imbalance.png`
+- `outputs/fraud_roc_curves.png`
+- `outputs/fraud_precision_recall.png`
+- `outputs/fraud_confusion_matrices.png`
+
+### 🛠️ Tech Stack
+- Imbalanced-learn (SMOTE)
+- Scikit-learn (Classification)
+- Pandas, NumPy, Matplotlib, Seaborn
+
+### 📊 Results
+- Best Model: Random Forest
+- ROC-AUC: 0.97+
+- Successfully detected fraud while minimizing false positives
