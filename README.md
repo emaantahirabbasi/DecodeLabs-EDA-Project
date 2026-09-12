@@ -2,13 +2,18 @@
 
 A collection of end-to-end machine learning projects covering EDA, feature engineering, classification, and unsupervised learning.
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
-![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-green)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.2%2B-orange)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+## 📚 Contents
+- [Project 1: Credit Card EDA & Feature Engineering](#project-1-credit-card-eda--feature-engineering)
+- [Project 2: Fraud Detection Pipeline](#project-2-fraud-detection-pipeline)
+- [Project 3: Customer Segmentation](#project-3-customer-segmentation-unsupervised-learning)
+- [How to Run](#-how-to-run)
+- [Author](#-author)
 
-## 📋 Project Overview
+---
 
+## 📋 Project 1: Credit Card EDA & Feature Engineering
+
+### Overview
 This project demonstrates **enterprise-grade data preprocessing** for the UCI Credit Card Default dataset. The goal was to transform raw, chaotic data into a mathematically clean dataset ready for machine learning algorithms.
 
 ### 🎯 Key Objectives
@@ -18,69 +23,47 @@ This project demonstrates **enterprise-grade data preprocessing** for the UCI Cr
 - Create professional visualizations
 - Deliver a production-ready cleaned dataset
 
----
-
-## 📊 Dataset
-
-**Source:** UCI Machine Learning Repository - Credit Card Default Dataset  
+### 📊 Dataset
+**Source:** UCI Machine Learning Repository — Credit Card Default Dataset  
 **Size:** 30,000 rows × 25 columns  
 **Target:** Default payment (0 = No Default, 1 = Default)
 
----
+### 🛠️ Methodology
 
-## 🛠️ Methodology
+**1. Missing Data Handling**
 
-### 1. Missing Data Handling
 | Method | Variance Preserved |
-|--------|-------------------|
-| **Median Imputation** | 82% |
-| **Group-Wise Mean** | 88% |
+|---|---|
+| Median Imputation | 82% |
+| Group-Wise Mean | 88% |
 | **KNN Imputation** | **94%** ✅ |
 
 **Chosen Method:** KNN Imputation (best variance preservation)
 
-### 2. Outlier Detection & Treatment
+**2. Outlier Detection & Treatment**
 - **Method:** Interquartile Range (IQR)
-- **Treatment:** Winsorization (capping) - **100% rows preserved**
+- **Treatment:** Winsorization (capping) — **100% rows preserved**
 
-### 3. Feature Engineering
+**3. Feature Engineering**
+
 | New Feature | Purpose |
-|-------------|---------|
-| **LOG_AMOUNT** | Normalize skewed transaction amounts |
-| **HOUR_OF_DAY** | Capture hourly patterns |
-| **V_MEAN** | Reduce dimensionality |
-| **V_SUM** | Capture total variance |
+|---|---|
+| LOG_AMOUNT | Normalize skewed transaction amounts |
+| HOUR_OF_DAY | Capture hourly patterns |
+| V_MEAN | Reduce dimensionality |
+| V_SUM | Capture total variance |
 
----
-
-## 📈 Results
+### 📈 Results
 
 | Metric | Before | After |
-|--------|--------|-------|
-| Rows Retained | 30,000 | **30,000** (100%) |
-| Features | 25 | **29** (4 engineered) |
+|---|---|---|
+| Rows Retained | 30,000 | **30,000 (100%)** |
+| Features | 25 | **29 (4 engineered)** |
 | Missing Values | 15% | **0%** |
 
 ---
 
-## 🖥️ Visualizations
-
-### Feature Distributions
-![Feature Distributions](outputs/distributions.png)
-
----
-
-## 🚀 How to Run
-
-### Install Dependencies
-```bash
-pip install -r requirements.txt
-
-
-
-
----
-Project 2: Fraud Detection Pipeline
+## Project 2: Fraud Detection Pipeline
 
 ### 📋 Overview
 Supervised learning project to detect fraudulent transactions in a highly imbalanced dataset (0.17% fraud rate).
@@ -105,14 +88,9 @@ Supervised learning project to detect fraudulent transactions in a highly imbala
 - Pandas, NumPy, Matplotlib, Seaborn
 
 ### 📊 Results
-- Best Model: Random Forest
-- ROC-AUC: 0.97+
+- **Best Model:** Random Forest
+- **ROC-AUC:** 0.97+
 - Successfully detected fraud while minimizing false positives
-
-
-
-
-
 
 ---
 
@@ -141,13 +119,14 @@ Unsupervised learning project to discover hidden customer segments using PCA and
 - Pandas, NumPy, Matplotlib, Seaborn
 
 ### 📊 Results
-- Optimal clusters: 5
-- Silhouette Score: 0.55+
+- **Optimal clusters:** 5
+- **Silhouette Score:** 0.55+
 - Identified key customer personas for targeted marketing
 
 ### 👥 Customer Personas Discovered
+
 | Persona | Characteristics | Action |
-|---------|-----------------|--------|
+|---|---|---|
 | 💎 Premium Spenders | High income, high spending | VIP treatment, exclusive offers |
 | 💰 Conservative Affluent | High income, low spending | High-quality products, warranties |
 | 🔥 Budget Enthusiasts | Low income, high spending | Flash sales, BNPL options |
@@ -155,3 +134,8 @@ Unsupervised learning project to discover hidden customer segments using PCA and
 
 ---
 
+## 🚀 How to Run
+
+### Install Dependencies
+```bash
+pip install -r requirements.txt
