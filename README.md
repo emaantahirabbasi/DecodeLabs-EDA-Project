@@ -107,3 +107,39 @@ Supervised learning project to detect fraudulent transactions in a highly imbala
 - Best Model: Random Forest
 - ROC-AUC: 0.97+
 - Successfully detected fraud while minimizing false positives
+
+
+
+
+
+
+---
+
+## Project 3: Customer Segmentation (Unsupervised Learning)
+
+### 📋 Overview
+Unsupervised learning project to discover hidden customer segments using PCA and K-Means clustering.
+
+### 🎯 Key Achievements
+- Applied **PCA** to reduce dimensionality (95% variance preserved)
+- Used **Elbow Method** and **Silhouette Score** to find optimal K
+- Implemented **K-Means clustering** to segment customers
+- Translated clusters into **actionable business personas**
+- Visualized clusters in 2D PCA space
+
+### 📁 Files
+- `notebooks/03_Project3_CustomerSegmentation.ipynb`
+- `outputs/pca_variance.png`
+- `outputs/elbow_method.png`
+- `outputs/silhouette_score.png`
+- `outputs/customer_clusters.png`
+- `outputs/cluster_profiles.png`
+
+### 🛠️ Tech Stack
+- Scikit-learn (PCA, K-Means)
+- Pandas, NumPy, Matplotlib, Seaborn
+
+### 📊 Results
+- Optimal clusters: 5
+- Silhouette Score: 0.55+
+- Identified key customer personas for targeted marketing
