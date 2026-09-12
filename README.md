@@ -143,3 +143,15 @@ Unsupervised learning project to discover hidden customer segments using PCA and
 - Optimal clusters: 5
 - Silhouette Score: 0.55+
 - Identified key customer personas for targeted marketing
+
+### 👥 Customer Personas Discovered
+| Persona | Characteristics | Action |
+|---------|-----------------|--------|
+| 💎 Premium Spenders | High income, high spending | VIP treatment, exclusive offers |
+| 💰 Conservative Affluent | High income, low spending | High-quality products, warranties |
+| 🔥 Budget Enthusiasts | Low income, high spending | Flash sales, BNPL options |
+| ⚠️ Cautious Minimizers | Low income, low spending | Value pricing, basic utility |
+
+---
+
+**📌 All 3 DecodeLabs Projects Complete!**
