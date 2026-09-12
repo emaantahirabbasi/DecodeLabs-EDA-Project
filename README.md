@@ -80,8 +80,7 @@ pip install -r requirements.txt
 
 
 ---
-
-## Project 2: Fraud Detection Pipeline
+Project 2: Fraud Detection Pipeline
 
 ### 📋 Overview
 Supervised learning project to detect fraudulent transactions in a highly imbalanced dataset (0.17% fraud rate).
