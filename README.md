@@ -1,4 +1,6 @@
-# DecodeLabs Internship - Advanced EDA & Feature Engineering
+# Data Science Portfolio
+
+A collection of end-to-end machine learning projects covering EDA, feature engineering, classification, and unsupervised learning.
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-green)
@@ -154,4 +156,3 @@ Unsupervised learning project to discover hidden customer segments using PCA and
 
 ---
 
-**📌 All 3 DecodeLabs Projects Complete!**
